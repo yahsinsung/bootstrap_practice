@@ -1,0 +1,12 @@
+// Custom Bootstrap for project.
+
+@import "variables";
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Add some extended classes
+
+.form-control:focus, .accordion-button:focus, .btn:focus{
+    outline:0;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}

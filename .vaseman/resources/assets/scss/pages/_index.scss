@@ -1,0 +1,96 @@
+.l-banner{
+    background: url(https://bootstrapmade.com/demo/templates/Logis/assets/img/hero-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.h-section-padding{
+        padding-top: 100px;
+    }
+
+    .c-feature__number{
+        position: relative;
+    
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 20px;
+            background: $primary;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .l-banner{
+        background-size: cover;
+    }
+}
+
+.l-about{
+    .c-about__list{
+        i{
+            width: 48px;
+            height: 48px;
+        }
+    }
+    
+    .c-btn-play{
+        width: 72px;
+        height: 72px;
+
+        i{
+            position: relative;
+            left: -3px;
+        }
+    }    
+}
+
+.l-cta{
+    background: 
+        linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('http://bootstrapmade.com/demo/templates/Logis/assets/img/cta-bg.jpg');
+    background-attachment: fixed;
+}
+
+.l-pricing{
+    .c-pricing-card.active{
+        border-top: 4px solid $primary!important;
+    }
+}
+
+.l-pricing, .l-about, .l-service{
+    padding-top: 0;
+}
+
+.l-comment{
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url('https://bootstrapmade.com/demo/templates/Logis/assets/img/testimonials-bg.jpg');
+    .subtitle{
+        opacity: .5;
+    }
+    .comment-avatar{
+        width: 100px;
+    }
+
+    .c-comment-foreword{
+        padding: 20px 32px;
+        &::before{
+            content: '“';
+            position: absolute;
+            left: -10px;
+            top: 5px;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', sans-serif;
+        }
+        &::after{
+            content: '”';
+            position: absolute;
+            bottom: -20px;
+            right: 10px;
+            font-size: 3rem;
+            font-family: 'Franklin Gothic Medium', sans-serif;
+        }
+    }
+}

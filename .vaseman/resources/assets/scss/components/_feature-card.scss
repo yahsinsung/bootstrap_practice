@@ -1,0 +1,22 @@
+.c-feature-card{
+    & > i{
+        transition: .5s;
+    }
+    h4{
+        transition: .5s;
+    }
+    a{
+        transition: .5s;
+    }
+    &:hover{
+        & > i{
+            color: $primary!important;
+        }
+        h4{
+            color: $primary;
+        }
+        a{
+            color: $primary!important;
+        }
+    }
+}

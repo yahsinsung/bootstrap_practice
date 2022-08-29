@@ -1,0 +1,28 @@
+.section-title{
+    position: relative;
+    margin-bottom: 4rem;
+
+    span {
+        position: absolute;
+        top: -24px;
+        color: $gray-100;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        font-size: 56px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    h2::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color: $primary;
+        left: 0;
+        right: 0;
+        bottom: -1rem;
+        margin: auto;
+    }
+}

@@ -1,0 +1,9 @@
+.c-service-card{
+    a{
+        transition: .5s;
+
+        &:hover{
+            color: $primary!important;
+        }
+    }
+}

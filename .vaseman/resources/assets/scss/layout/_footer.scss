@@ -1,0 +1,28 @@
+.l-footer{
+
+    .l-social-links{
+        .c-btn-icon{
+            width: 36px;
+            height: 36px;
+            opacity: .6;
+            transition: 0.5s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    ul a {
+        color: rgba(255, 255, 255, 0.6);
+        transition: 0.5s;
+
+        &:hover{
+            color:rgba(255, 255, 255, 1);
+        }
+
+        &:first-child{
+            padding-top: 0!important;
+        }
+    }
+}

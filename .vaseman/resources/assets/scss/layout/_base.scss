@@ -1,0 +1,34 @@
+
+// Move down content because we have a fixed navbar that is 50px tall
+
+body{
+  overflow-x: hidden;
+  position: relative;
+}
+
+[uni-cloak] * {
+  pointer-events: none;
+}
+
+.h-section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.h-img-hover{
+
+  &:hover{
+    img{
+      transform: scale(1.1);
+    }
+  }
+
+  img{
+    transition: transform .5s ease;
+  }
+
+}
+
+.h-overflow-hidden{
+  overflow: hidden;
+}
